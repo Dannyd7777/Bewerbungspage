@@ -1429,7 +1429,7 @@
             </div>
           </div>
         `;
-      } else if(password === "Netzin") {
+      } else if(password === "Netzint") {
         content = `
           <h2>Bewerbung als Werkstudent in der Welt der Informatik</h2>
           <div class="anschreiben-brief">
@@ -1476,7 +1476,7 @@
     // -------------------------------
     function checkPassword() {
       const password = document.getElementById('password-input').value;
-      const validPasswords = ["#1", "Trumpf", "Netzin"];
+      const validPasswords = ["#1", "Trumpf", "Netzint"];
       
       if(validPasswords.includes(password)) {
         // Login-Animation anzeigen
@@ -1498,7 +1498,7 @@
           document.getElementById('auth-btn').textContent = password;
         }, 1500);
       } else {
-        alert('Falsches Passwort! Erlaubte Passwörter: #1, Trumpf oder Netzin');
+        alert('Falsches Passwort!');
         document.getElementById('password-input').focus();
       }
     }
