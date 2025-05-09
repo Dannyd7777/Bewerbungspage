@@ -980,8 +980,9 @@
             <div class="highlight">
               <div class="highlight-title">Zusätzliche Qualifikationen</div>
               <ul class="skill-list">
-                <li>Verständnis für User Experience und User Interface Design</li>
-                <li>Eigenständige Durchführung eines Web-Entwicklungsprojekts</li>
+                <li>Erfahrung in der Erstellung und Durchführung von Workshops</li>
+                <li>Grundkenntnisse in Figma zur Prototypenerstellung</li>
+                <li>Grundlagen in Design Thinking und Lean UX</li>
               </ul>
             </div>
           </div>
@@ -1465,8 +1466,45 @@
             </div>
           </div>
         `;
-      }
+      } else if(password === "KaelinAero") {
+  content = `
+    <h2>Bewerbung als Werkstudent im Bereich ERP-System</h2>
+    <div class="anschreiben-brief">
+      <div class="absender">
+        <p>Danny Behringer</p>
+        <p>Bismarckstr. 2</p>
+        <p>78727 Oberndorf</p>
+      </div>
       
+      <div class="empfaenger">
+        <p><strong>Kaelin Aero GmbH</strong></p>
+        <p>z.Hd. Frau Sandra Kälin</p>
+        <p>Standort Oberndorf am Neckar</p>
+      </div>
+      
+      <div class="inhalt">
+        <p>Sehr geehrte Frau Kälin,</p>
+        
+        <p>über Google Jobs bin ich auf Ihre Stellenausschreibung als Werkstudent im Bereich ERP-Systeme aufmerksam geworden und möchte mich hiermit bei Ihnen bewerben. Die Möglichkeit, bei Kaelin Aero praktische Erfahrungen zu sammeln und gleichzeitig an der Weiterentwicklung und Optimierung Ihres ERP-Systems mitzuwirken, hat sofort mein Interesse geweckt.</p>
+        
+        <p>Aktuell befinde ich mich im Studium der IT-Produktmanagement an der Hochschule Furtwangen, was inhaltlich gut mit dem von Ihnen gesuchten Profil im Bereich Wirtschaftsinformatik harmoniert. Während meines Studiums habe ich theoretische Grundlagen zu Betriebssystemen und Unternehmenssoftware erworben, die ich nun gerne in der Praxis vertiefen möchte.</p>
+        
+        <p>Obwohl ich bisher keine direkte Berufserfahrung im ERP-Bereich sammeln konnte, bringe ich eine schnelle Auffassungsgabe und großes Interesse an dieser Thematik mit. Im Rahmen von Studienprojekten konnte ich bereits Erfahrungen im Testen von Software und in der technischen Dokumentation sammeln. Zudem arbeite ich gerne strukturiert und selbstständig und übernehme Verantwortung für meine Aufgaben.</p>
+        
+        <p>Was mich besonders an der Position reizt, ist die Möglichkeit, den gesamten Prozess von der Entwicklung über Tests bis hin zur Schulung der Mitarbeiter kennenzulernen. Ich bin überzeugt, dass ich durch mein Engagement und meine Flexibilität schnell in die Aufgaben hineinwachsen und wertvolle Unterstützung für Ihr Team leisten kann.</p>
+        
+        <p>Die Vereinbarkeit von Studium und Beruf sowie das angenehme Arbeitsklima, das Sie bieten, sind für mich weitere überzeugende Faktoren für eine Bewerbung bei Kaelin Aero.</p>
+        
+        <p>Ich würde mich sehr über die Gelegenheit freuen, mich in einem persönlichen Gespräch näher vorzustellen und mehr über die Position zu erfahren.</p>
+      </div>
+      
+      <div class="gruss">
+        <p>Mit freundlichen Grüßen</p>
+        <p><strong>Danny Behringer</strong></p>
+      </div>
+    </div>
+  `;
+}
       // HTML setzen
       anschreibenSection.innerHTML = content;
     }
@@ -1476,7 +1514,7 @@
     // -------------------------------
     function checkPassword() {
       const password = document.getElementById('password-input').value;
-      const validPasswords = ["#1", "Trumpf", "Netzint"];
+      const validPasswords = ["#1", "Trumpf", "Netzint", "KaelinAero"];
       
       if(validPasswords.includes(password)) {
         // Login-Animation anzeigen
